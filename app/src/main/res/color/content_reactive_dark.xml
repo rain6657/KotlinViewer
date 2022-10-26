@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2016 Hippo Seven
+  ~ Copyright 2018 Hippo Seven
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -15,15 +15,9 @@
   ~ limitations under the License.
   -->
 
-<vector
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:height="24dp"
-    android:width="24dp"
-    android:viewportWidth="24"
-    android:viewportHeight="24">
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <path
-        android:fillColor="@color/primary_drawable_dark"
-        android:pathData="@string/pd_plus"/>
+    <item android:state_activated="true" android:color="@color/content_activated_dark"/>
+    <item android:color="@color/content_dark"/>
 
-</vector>
+</selector>

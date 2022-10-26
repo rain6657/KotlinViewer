@@ -10,17 +10,22 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.KtEhviewer"
         tools:targetApi="31">
+
         <activity
             android:name=".views.GallaryActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="false"
             android:label="@string/title_activity_gallary"
-            android:theme="@style/Theme.KtEhviewer.Fullscreen" />
+            android:theme="@style/Theme.KtEhviewer.Fullscreen">
+
+        </activity>
+
+
         <activity
             android:name=".views.MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/AppTheme.Main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,6 +36,7 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
     </application>
 
 </manifest>

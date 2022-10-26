@@ -1,5 +1,4 @@
 <resources>
-
     <style name="Widget.Theme.KtEhviewer.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
         <item name="android:background">@color/black_overlay</item>
     </style>
@@ -8,4 +7,140 @@
         <item name="android:background">@color/black_overlay</item>
         <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
     </style>
+
+    <style name="ActionBarStyle" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="background">@color/teal_500</item>
+    </style>
+
+    <!-- TextAppearance -->
+    <style name="TextAppearance" parent="TextAppearance.AppCompat">
+    </style>
+
+    <!-- Progress View -->
+    <style name="ProgressView">
+        <item name="color">?attr/progressColor</item>
+        <item name="indeterminate">true</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="ProgressView.Small">
+        <item name="android:minWidth">16dp</item>
+        <item name="android:minHeight">16dp</item>
+    </style>
+
+    <style name="ProgressView.Large">
+        <item name="android:minWidth">76dp</item>
+        <item name="android:minHeight">76dp</item>
+    </style>
+
+    <style name="TextAppearance.CardTitle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="CardTitle">
+        <item name="android:textAppearance">@style/TextAppearance.CardTitle</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+    </style>
+
+    <style name="TextAppearance.CardMessage">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="CardMessage">
+        <item name="android:textAppearance">@style/TextAppearance.CardMessage</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!-- CategoryText -->
+    <style name="CategoryText">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Subhead</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="maskColor">@color/check_text_view_mask</item>
+    </style>
+
+    <style name="TextAppearance.CategoryTitle" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">?attr/textColorThemeAccent</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CategoryTitle">
+        <item name="android:textAppearance">@style/TextAppearance.CategoryTitle</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="ButtonInCard">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Button</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:minWidth">88dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="ButtonInCard.Accent">
+        <item name="android:textColor">?attr/colorAccent</item>
+    </style>
+
+    <style name="Slider">
+        <item name="thickness">2dp</item>
+        <item name="radius">6dp</item>
+        <item name="color">?attr/widgetColorThemeAccent</item>
+        <item name="textColor">@android:color/white</item>
+        <item name="textSize">12sp</item>
+        <item name="dark">false</item>
+    </style>
+
+    <style name="Slider.Dark">
+        <item name="dark">true</item>
+    </style>
+
+    <style name="Indicating">
+        <item name="indicatorHeight">1dp</item>
+        <item name="indicatorColor">?attr/dividerColor</item>
+    </style>
+
+    <style name="Widget.Design.FloatingActionButton.Mini">
+        <item name="fabSize">mini</item>
+    </style>
+
+    <style name="Guide.Title" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">?attr/guideTitleColor</item>
+    </style>
+
+    <style name="Guide.Text" parent="TextAppearance.AppCompat.Subhead">
+        <item name="android:textColor">?attr/guideTextColor</item>
+    </style>
+
+<!--    <style name="Guide">-->
+<!--        <item name="sv_backgroundColor">?attr/guideBackgroundColor</item>-->
+<!--        <item name="sv_titleTextAppearance">@style/Guide.Title</item>-->
+<!--        <item name="sv_detailTextAppearance">@style/Guide.Text</item>-->
+<!--    </style>-->
+
+    <style name="CardView.Normal">
+        <item name="cardCornerRadius">2dp</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardElevation">2dp</item>
+        <item name="cardMaxElevation">2dp</item>
+        <item name="cardPreventCornerOverlap">true</item>
+        <item name="cardBackgroundColor">?attr/contentColorPrimary</item>
+        <item name="contentPadding">0dp</item>
+    </style>
+
+    <style name="CardView.Reactive" parent="CardView.Normal">
+        <item name="cardBackgroundColor">?attr/contentColorReactive</item>
+    </style>
+
 </resources>
