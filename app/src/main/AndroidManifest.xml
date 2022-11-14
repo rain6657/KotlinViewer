@@ -16,14 +16,14 @@
         android:supportsRtl="true"
         tools:targetApi="31">
 
-        <activity
-            android:name=".views.GallaryActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:exported="false"
-            android:label="@string/title_activity_gallary"
-            android:theme="@style/Theme.KtEhviewer.Fullscreen">
+<!--        <activity-->
+<!--            android:name=".views.GalleryActivity"-->
+<!--            android:configChanges="orientation|keyboardHidden|screenSize"-->
+<!--            android:exported="false"-->
+<!--            android:label="@string/title_activity_gallery"-->
+<!--            android:theme="@style/Theme.KtEhviewer.Fullscreen">-->
 
-        </activity>
+<!--        </activity>-->
 
 
         <activity

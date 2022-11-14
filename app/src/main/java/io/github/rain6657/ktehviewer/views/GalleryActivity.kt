@@ -12,13 +12,12 @@ import android.view.WindowInsets
 import android.widget.LinearLayout
 import android.widget.TextView
 import io.github.rain6657.ktehviewer.databinding.ActivityGallaryBinding
-import io.github.rain6657.ktehviewer.viewmodels.GallaryViewModel
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
  * status bar and navigation/system bar) with user interaction.
  */
-class GallaryActivity : AppCompatActivity() {
+class GalleryActivity : AppCompatActivity() {
 
     private lateinit var vdb: ActivityGallaryBinding
     private lateinit var fullscreenContent: TextView

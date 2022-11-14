@@ -1,17 +1,16 @@
 package io.github.rain6657.ktehviewer.models
 
-import io.github.rain6657.ktehviewer.R
 import java.net.URL
 
-class GallaryInfo {
+class GalleryInfo {
     companion object {
         public const val IMAGE_URL_PATTERN: String = "<img[^>]*src=\"()[^\"]*\" style"
 
-        fun getGallaryInfo() {
+        fun getGalleryInfo() {
 
         }
 
-        fun GallaryInfoPhaser(response: String) {
+        fun galleryInfoPhaser(response: String) {
 
 
         }
@@ -32,10 +31,6 @@ class GallaryInfo {
     public val token: String = ""
     public val uploader: String = ""
     public val visible: Boolean = false
-
-    constructor(url: URL) {
-
-    }
 
 
 }

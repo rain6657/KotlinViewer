@@ -1,23 +1,23 @@
 package io.github.rain6657.ktehviewer.viewmodels
 
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import io.github.rain6657.ktehviewer.R
-import io.github.rain6657.ktehviewer.models.GallaryInfo
+import io.github.rain6657.ktehviewer.models.GalleryInfo
 import io.github.rain6657.ktehviewer.utils.network.EhApiService
 import kotlinx.coroutines.launch
 
 class MainViewModel : ViewModel() {
-    public val searchTitleText: String? = null
-    public val searchEditText: String? = null
-    public val selectedMenuItem: String? = null
+    public var searchTitleText: String? = null
+    public var searchEditText: String? = null
+    public var selectedMenuItem: String? = null
+    public lateinit var galleryList: List<GalleryInfo>
+
 
 
     fun refresh() {
         viewModelScope.launch {
-            val Response = EhApiService.EhApi.retrofitService.getHome()
-            val GallaryInfoList = GallaryInfo.GallaryInfoPhaser(Response)
+            val response = EhApiService.EhApi.retrofitService.getHome()
+            val gallery = GalleryInfo.galleryInfoPhaser(response)
         }
     }
     // Todo: Implement the viewmodel

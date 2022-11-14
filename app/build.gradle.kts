@@ -1,7 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    kotlin("kapt")
+//    kotlin("kapt")
 }
 
 android {
@@ -34,8 +34,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
     kotlinOptions {
         jvmTarget = "1.8"
@@ -80,7 +80,7 @@ dependencies {
 //    annotationProcessor("androidx.room:room-compiler:2.4.3")
 
     // To use Kotlin annotation processing tool (kapt)
-    kapt("androidx.room:room-compiler:2.4.3")
+//    kapt("androidx.room:room-compiler:2.4.3")
     // To use Kotlin Symbolic Processing(KSP)
 //    ksp("androidx.room:room-compiler:2.4.2")
 
