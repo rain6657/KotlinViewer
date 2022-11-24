@@ -44,8 +44,7 @@
         <!--        <item name="galleryDetailDivider">@drawable/divider_gallery_detail_light</item>-->
     </style>
 
-    <style name="AppTheme" parent="BaseTheme">
-    </style>
+    <style name="AppTheme" parent="BaseTheme"></style>
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>

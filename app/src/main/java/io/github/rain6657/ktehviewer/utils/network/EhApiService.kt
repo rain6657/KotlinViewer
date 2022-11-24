@@ -1,16 +1,24 @@
 package io.github.rain6657.ktehviewer.utils.network
 
+import okhttp3.OkHttpClient
 import retrofit2.Retrofit
+import retrofit2.converter.scalars.ScalarsConverterFactory
 import retrofit2.http.GET
 import retrofit2.http.Path
-import retrofit2.http.Query
+import java.net.InetSocketAddress
+import java.net.Proxy
 
 
 object EhApiService {
     private const val UserAgent: String =
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
 
-    private val retrofit = Retrofit.Builder()
+    private var retrofit = Retrofit.Builder()
+        .client(
+            OkHttpClient.Builder()
+                .proxy(Proxy(Proxy.Type.SOCKS, InetSocketAddress("127.0.0.1", 1080))).build()
+        )
+        .addConverterFactory(ScalarsConverterFactory.create())
         .baseUrl("https://e-hentai.org")
         .build()
 
