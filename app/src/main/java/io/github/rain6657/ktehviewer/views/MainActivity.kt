@@ -10,6 +10,7 @@ import androidx.core.view.WindowCompat
 import androidx.lifecycle.lifecycleScope
 import io.github.rain6657.ktehviewer.viewmodels.MainViewModel
 import io.github.rain6657.ktehviewer.databinding.ActivityMainBinding
+import io.github.rain6657.ktehviewer.models.GalleryList
 import io.github.rain6657.ktehviewer.utils.network.EhApiService
 import kotlinx.coroutines.launch
 
@@ -32,13 +33,15 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    public fun showToast(text: String) {
+    private fun showToast(text: String) {
         Toast.makeText(this, text, Toast.LENGTH_LONG)
     }
 
-    fun refresh() {
+    private fun refresh() {
         lifecycleScope.launch {
-            EhApiService.EhApi.retrofitService.getHome()
+            val body: String = EhApiService.EhApi.retrofitService.getHome()
+            val gl = GalleryList.parse(body)
+            return@launch
         }
     }
 }

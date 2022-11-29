@@ -74,6 +74,8 @@ dependencies {
 
     // Room
     implementation("androidx.room:room-ktx:2.4.3")
+    implementation("com.squareup.retrofit2:converter-simplexml:2.9.0")
+    implementation("org.jsoup:jsoup:1.15.3")
 
 
 //    implementation("androidx.room:room-runtime:2.4.3")
